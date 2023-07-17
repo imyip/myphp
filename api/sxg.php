@@ -1,4 +1,19 @@
 <?php
+/**
+凤凰中文,https://live.goodiptv.club/api/sxg.php?id=test1_4000
+凤凰资讯,https://live.goodiptv.club/api/sxg.php?id=test2_4000
+
+CCTV-16 奥林匹克 4K,https://live.goodiptv.club/api/sxg.php?id=CCTV-16-4K_8000
+CCTV-17 农业农村,https://live.goodiptv.club/api/sxg.php?id=CCTV-17_4000
+CCTV-4K 超高清,https://live.goodiptv.club/api/sxg.php?id=ys4Kcq_2000
+4K超高清电影 4K,https://live.goodiptv.club/api/sxg.php?id=emdy4k_8000
+欢笑剧场4K,https://live.goodiptv.club/api/sxg.php?id=hxjc-4k_8000
+CHC动作电影,https://live.goodiptv.club/api/sxg.php?id=wqCHCdzdyH265_4000
+CHC高清电影,https://live.goodiptv.club/api/sxg.php?id=lnwsCHC-HDH265_4000
+CHC家庭影院,https://live.goodiptv.club/api/sxg.php?id=jbtygqCHCjtyyH265_4000
+动漫秀场,https://live.goodiptv.club/api/sxg.php?id=yybb-dmxc-H265_4000
+*/
+
 date_default_timezone_set("Asia/Shanghai");
 $channel = empty($_GET['id']) ? "emdy4k_8000" : trim($_GET['id']);
 $array = explode("_", $channel);
